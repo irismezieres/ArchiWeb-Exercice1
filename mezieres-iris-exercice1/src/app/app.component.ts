@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mezieres-iris-exercice1';
+
+  public color: string = '';
+
+  public getBackgroundColor(color: string) {
+    this.color = color;
+  }
 }
